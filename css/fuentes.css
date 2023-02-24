@@ -1,0 +1,6 @@
+h2 {
+    font-size: 50px; /* Tamaño de la letra*/
+    font-weight: 900;/* Grosor de la letra*/
+    font-style: italic; /* Estilo de letra*/
+    font-family:  'Shantell Sans', cursiva; /* Cambiar tipo de fuente */
+}
