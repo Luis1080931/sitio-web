@@ -1,0 +1,43 @@
+.bordo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box-style{
+    width: 350px;
+    margin: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: justify;
+    font-size: 1.3em;
+    font-weight: 900;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.4em;
+}
+.box-1{
+    border: 12px solid #000;
+    background-color: aqua;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    text-decoration:overline;
+
+}
+.box-2{
+    border: 3px dashed darkcyan;
+    background-color: lime;
+}
+.box-3{
+    border: 3px dotted lime;
+    background-color: orange;
+}
+.box-4{
+    border: 6px double purple;
+    background-color: aquamarine;
+}
+body{
+    background-color: beige;
+}
