@@ -12,9 +12,9 @@
     transition: 0.2s;
 }
 .btn-neon:hover{
-    background: #D2691E;
-    box-shadow: 0 0 10px #D2691E,
-    0  0 40px #D2691E, 0 0 80px #D2691E;
+    background: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff,
+    0  0 40px #ff00ff, 0 0 80px #ff00ff;
     transition-delay: 1s;
 }
 .btn-neon:hover span{
@@ -27,7 +27,7 @@
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#D2691E);
+    background: linear-gradient(90deg,transparent,#ff00ff);
 }
 .btn-neon:hover #span1{
     left: 100%;
@@ -39,7 +39,7 @@
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg,transparent,#D2691E);
+    background: linear-gradient(270deg,transparent,#ff00ff);
 }
 .btn-neon:hover #span3{
     right: 100%;
@@ -52,7 +52,7 @@
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,#D2691E);
+    background: linear-gradient(180deg,transparent,#ff00ff);
 }
 .btn-neon:hover #span2{
     top: 100%;
@@ -65,7 +65,7 @@
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,#D2691E);
+    background: linear-gradient(360deg,transparent,#ff00ff);
 }
 .btn-neon:hover #span4{
     bottom: 100%;
@@ -73,46 +73,30 @@
     transition-delay: 0.75s;
 }
 
-.bordo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.box-style{
-    width: 350px;
-    margin: 20px;
-    display: inline-block;
-    padding: 15px 30px;
-    text-align: justify;
-    font-size: 1.3em;
-    font-weight: 900;
-    letter-spacing: 0;
-    word-spacing: 0;
-    line-height: 1.4em;
-}
-.box-1{
-    border: 12px solid #000;
-    background-color: aqua;
-}
 h1{
-    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     font-size: 3em;
-    text-decoration:overline;
+    font-weight: 900;
+}
+.nombre-producto, .precio-producto {
+    display: block;
+    color: rgb(48, 48,48.9);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.product-box{
+    width: 400px;
+    display: inline-block;
+    margin: 0 25px;
+}
+.nombre-producto{
+    font-size: 1.9em;
+}
+.precio-producto{
+    font-size: 2.3em;
+    font-weight: 900;
+}
+img{
+    width: 100%;
+}
 
-}
-.box-2{
-    border: 3px dashed darkcyan;
-    background-color: lime;
-}
-.box-3{
-    border: 3px dotted lime;
-    background-color: orange;
-}
-.box-4{
-    border: 6px double purple;
-    background-color: aquamarine;
-}
-body{
-    background-color: beige;
-}
