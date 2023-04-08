@@ -1,16 +1,16 @@
-h2 {
-    font-size: 50px; /* Tamaño de la letra*/
-    font-weight: 900;/* Grosor de la letra*/
-    font-style: italic; /* Estilo de letra*/
-    font-family:  'Shantell Sans', cursiva; /* Cambiar tipo de fuente */
-}
-
 body{
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/286/653/248/anime-cartoon-dragon-ball-goku-wallpaper-preview.jpg);
+    background-image: url(https://images4.alphacoders.com/168/168614.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    
 }
+h1{
+    color: rgb(5, 7, 47);
+    font-size: 2em;
+    font-weight: 900;
+}
+
 
 .btn-neon{
     margin: 20px;
@@ -26,9 +26,9 @@ body{
     transition: 0.2s;
 }
 .btn-neon:hover{
-    background: #ff00ff;
-    box-shadow: 0 0 10px #ff00ff,
-    0  0 40px #ff00ff, 0 0 80px #ff00ff;
+    background: #00ff00;
+    box-shadow: 0 0 10px #00ff00,
+    0  0 40px #00ff00, 0 0 80px #00ff00;
     transition-delay: 1s;
 }
 .btn-neon:hover span{
@@ -41,7 +41,7 @@ body{
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#ff00ff);
+    background: linear-gradient(90deg,transparent,#00ff00);
 }
 .btn-neon:hover #span1{
     left: 100%;
@@ -53,7 +53,7 @@ body{
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg,transparent,#ff00ff);
+    background: linear-gradient(270deg,transparent,#00ff00);
 }
 .btn-neon:hover #span3{
     right: 100%;
@@ -66,7 +66,7 @@ body{
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,#ff00ff);
+    background: linear-gradient(180deg,transparent,#00ff00);
 }
 .btn-neon:hover #span2{
     top: 100%;
@@ -79,7 +79,7 @@ body{
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,#ff00ff);
+    background: linear-gradient(360deg,transparent,#00ff00);
 }
 .btn-neon:hover #span4{
     bottom: 100%;
