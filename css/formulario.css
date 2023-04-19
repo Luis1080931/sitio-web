@@ -1,0 +1,148 @@
+*{
+    font-family: tahoma, sans-serif;
+}
+.content-box{
+    border: 1px solid rgb(240, 0, 0);
+    width: 600px;
+    margin-top: 80px;
+}
+.form-title{
+    height: 80px;
+    color: #fff;
+    background-color: rgb(240, 0, 0);
+    margin-top: 0;
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+form{
+    width: 600px;
+    padding: 20px 40px;
+}
+input[type="text"] {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1px solid rgb(64,64,64);
+}
+label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+select{
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    width: 480px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: dodgerblue;
+    line-height: 55px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+.dia{
+    margin-bottom: 20px;
+}
+input[type="radio"], input[type="checkbox"]{
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+.btn-neon{
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #000;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover {
+    background-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00,
+    0 0 40px #00ff00, 0 0 80px #00ff00;
+    transition-delay: 1s;
+}
+.btn-neon:hover span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#00ff00);
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span2{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#00ff00);
+}
+.btn-neon:hover #span2{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span3{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#00ff00);
+}
+.btn-neon:hover #span3{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#00ff00);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario </title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    
+    <a href="index.html" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Inicio
+    </a>
+
+<div class="main-box">
+    <div class="content-box">
+    <div class="form-title">
+        <span>  Avianca-Tickets </span> 
+    </div>
+    <div class="form-box">
+    <form>
+        <label>Ingrese el número de documento</label>
+        <input type="text">
+
+        <label> Ingrese el tipo de documento</label>
+        <select name="Tipo de documento">
+            <option value="C.C"> Cedula de Cuidadanía </option>
+            <option value="T.I"> Tarjeta de Identidad </option>
+            <option value="R.C"> Registro Civíl </option>
+            <option value="C.T"> Cédula Extranjera </option>
+        </select>
+        <label> Por favor, seleccione la clase </label> <br>
+        <input type="radio" name="clase-vuelo">Primera clase<br>
+        <input type="radio" name="clase-vuelo">Busines class<br>
+        <input type="radio" name="clase-vuelo">Clase turista<br>
+    
+        <label class="dia"> Por favor, seleccione el día para visualizar los días disponibles</label> 
+        <input type="checkbox" name="disponibilidad" value="2023-04-19">Miercoles, 19 de Abril del 2023 <br>
+        <input type="checkbox" name="disponibilidad" value="2023-04-20">Jueves, 20 de Abril del 2023 <br>
+        <input type="checkbox" name="disponibilidad" value="2023-04-21">Viernes, 21 de Abril del 2023 <br>
+        <input type="checkbox" name="disponibilidad" value="2023-04-22">Sábado, 22 de Abril del 2023 <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+</div>
+</div>
+    
+    
+    
+</body>
+</html>
