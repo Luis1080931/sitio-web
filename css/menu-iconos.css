@@ -4,9 +4,6 @@
 }
 .main-menu{
     list-style: none;
-<<<<<<< HEAD
-}
-=======
     position: fixed;
     border-right: 1px solid #C0C0C0;
     width: 250px;
@@ -46,10 +43,6 @@ hr{
     background-color: #C0C0C0;
 }
 
-
-
-
->>>>>>> 3f27414185daf736dc908797ac85314ab8a64f3b
 .btn-neon{
     margin: 20px;
     position: relative;
