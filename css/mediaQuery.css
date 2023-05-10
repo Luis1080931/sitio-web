@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    margin-left: 30px;
+}
+.main-nav{
+    background-color: rgb(94, 101, 196);
+    height: 80px; 
+    border-bottom: 2px solid #000;
+}
+
+.main-menu{
+    width: 100%;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.item-style{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 30px;
+    list-style: none;
+}
+
+.item-style-last {
+    margin-right: 100px;
+}
+a {
+    color: rgb(0,0,0);
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.hamburguer-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 770px){
+
+    /* desaparecer el menu */
+
+    .main-menu {
+        display: none;
+    }
+    .image{
+        display: none;
+    }
+    .hamburguer-menu {
+        display: inline-block;
+        color: white;
+        font-size: 2.3em;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+}
