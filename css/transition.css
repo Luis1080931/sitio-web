@@ -14,3 +14,22 @@
     background-color: #00ff00;
     cursor: pointer;
 }
+
+.box-2{
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: aqua;
+    transition: all 1s;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.box-2:hover{
+    width: 400px;
+    height: 400px;
+    background-color: purple;
+    cursor: grab;
+}
