@@ -15,7 +15,6 @@ body{
 }
 
 
-
 .slider {
     display: flex;
     height: auto;
@@ -72,8 +71,8 @@ body{
 
     100% {
         -webkit-transform: translateX(calc(-249
-        px * 18));
-        transform: translateX(calc(-249px * 18));
+        px * 19));
+        transform: translateX(calc(-249px * 19));
     }
 }
 
@@ -1338,6 +1337,78 @@ body{
     background: linear-gradient(360deg, transparent, #ADFF2F);
 }
 .btn-neon17:hover #span68{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.btn-neon18{
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon18:hover{
+    background: #00ffff;
+    box-shadow: 0 0 10px #00ffff,
+    0 0 40px #00ffff, 0 0 80px #00ffff;
+    transition-delay: 1s;
+}
+.btn-neon18:hover span{
+    position: absolute;
+    display: block;
+}
+
+#span69{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ffff);
+}
+.btn-neon18:hover #span69{
+    left: 100%;
+    transition: 1s;
+}
+#span70{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #00ffff);
+}
+.btn-neon18:hover #span70{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span71{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00ffff);
+}
+.btn-neon18:hover #span71{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span72{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #00ffff);
+}
+.btn-neon18:hover #span72{
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
