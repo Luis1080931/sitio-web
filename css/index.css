@@ -70,9 +70,9 @@ body{
     }
 
     100% {
-        -webkit-transform: translateX(calc(-249
-        px * 19));
-        transform: translateX(calc(-249px * 19));
+        -webkit-transform: translateX(calc(-247.5
+        px * 21));
+        transform: translateX(calc(-247.5 px * 21));
     }
 }
 
@@ -1409,6 +1409,153 @@ body{
     background: linear-gradient(360deg, transparent, #00ffff);
 }
 .btn-neon18:hover #span72{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.btn-neon19{
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon19:hover{
+    background: #b1060f;
+    box-shadow: 0 0 10px #b1060f,
+    0 0 40px #b1060f, 0 0 80px #b1060f;
+    transition-delay: 1s;
+}
+.btn-neon19:hover span{
+    position: absolute;
+    display: block;
+}
+
+#span73{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#b1060f);
+}
+.btn-neon19:hover #span73{
+    left: 100%;
+    transition: 1s;
+}
+
+#span74{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #b1060f);
+}
+.btn-neon19:hover #span74{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span75{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #b1060f);
+}
+.btn-neon19:hover #span75{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span76{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #b1060f);
+}
+.btn-neon19:hover #span76{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.btn-neon20{
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon20:hover{
+    background: #4169E1;
+    box-shadow: 0 0 10px #4169E1, 
+    0 0 40px #4169E1, 0 0 80px #4169E1;
+    transition-delay: 1s;
+}
+.btn-neon20:hover span{
+    position: absolute;
+    display: block;
+}
+
+#span77{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #4169E1);
+}
+.btn-neon20:hover #span77{
+    left: 100%;
+    transition: 1s;
+}
+#span78{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #4169E1);
+}
+.btn-neon20:hover #span78{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span79{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #4169E1);
+}
+.btn-neon20:hover #span79{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span80{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #4169E1);
+}
+.btn-neon20:hover #span80{
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
