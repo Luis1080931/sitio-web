@@ -86,3 +86,16 @@ header{
     display: flex;
     text-align: justify;
 }
+
+@media all and (max-width: 767px){
+
+    .main-content{
+    display: grid;
+    grid-template:
+                    "article-1  article-2"
+                    "article-3  article-4"
+                    "aarticle-5 article-6"
+;
+    grid-template-columns: minmax(6, 2fr) minmax(6, 2fr);
+}
+}
