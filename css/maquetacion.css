@@ -7,8 +7,8 @@
 body{
     display: grid;
     width: 100%;
-    grid-template: "empty-left          main-page           empty-right" 100vh /
-                    minmax(30px, 1fr) minmax(700px, 1200px) minmax(30px, 1fr);
+    grid-template: "empty-left          main-page             empty-right" 100vh /
+                    minmax(30px, 1fr)   minmax(700px, 1200px) minmax(30px, 1fr);
 }
 
 .main-page{
@@ -17,17 +17,19 @@ body{
 
 header{
     display: grid;
-    grid-template: "logo main-manu" 80px/
+    grid-template: "logo main-menu" 80px/
                     150px minmax(700px, 100%);
     gap: 40px;
     margin-top: 50px;
 }
 .logo{
+    grid-area: logo;
     background-color: rgb(190, 30, 30);
 }
 
 .main-menu{
     background-color: dodgerblue;
+    grid-area: main-menu;
 }
 
 .style-text{
@@ -87,15 +89,32 @@ header{
     text-align: justify;
 }
 
-@media all and (max-width: 767px){
-
+@media only screen and (max-width: 410px){
+    body{
+        display: grid;
+        width: 100%;
+        grid-template: "empty-left          main-page             empty-right" 100vh /
+                        minmax(30px, 1fr)   minmax(300px, 400px)  minmax(30px, 1fr);
+    }
+    header{
+        display: grid;
+        grid-template: "logo  main-menu" 80px/
+                        150px minmax(150px, 260px);
+        gap: 40px;
+        margin-top: 50px;
+    }
     .main-content{
-    display: grid;
-    grid-template:
-                    "article-1  article-2"
-                    "article-3  article-4"
-                    "aarticle-5 article-6"
-;
-    grid-template-columns: minmax(6, 2fr) minmax(6, 2fr);
-}
+        width: 100%;
+        grid-template: 
+                        "logo       main-menu"     80px
+                        "main-img   main-img"      250px 
+                        "article-1  article-1"     auto
+                        "article-2  article-2"     auto 
+                        "article-3  article-3"     auto 
+                        "article-4  article-4"     auto 
+                        "article-5  article-5"     auto
+                        "article-6  article-6"     auto /
+                         1fr        1fr   ;
+    }
+    
 }

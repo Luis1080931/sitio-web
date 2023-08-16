@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box-main-img {
+    width: 100%;
+    background-image: url(https://sailawaze.com/wp-content/uploads/2022/06/GettyImages-1207560901-min-scaled.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1260px;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 430px) {
+    .box-main-img {
+        background-image: url(https://th.bing.com/th/id/OIP.VnbmTwO7ah6nYRUJ2CZIrAHaLH?pid=ImgDet&w=474&h=711&rs=1);
+        width: 100%;
+        height: 600px;
+    }
+}
