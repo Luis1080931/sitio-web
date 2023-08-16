@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: grid;
+    width: 100%;
+    grid-template: "empty-left          main-page             empty-right" 100vh /
+                    minmax(0px, 1fr)   minmax(700px, 1200px) minmax(0px, 1fr);
+}
+
+.main-page{
+    grid-area: main-page;
+}
+
+header{
+    display: grid;
+    grid-template: "logo main-menu" 200px/
+                    200px minmax(700px, 100%);
+    gap: 40px;
+    margin-top: 50px;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(190, 30, 30);
+    background-image: url(https://th.bing.com/th/id/OIP.5t4NZQSumARf35LuANsAfgAAAA?pid=ImgDet&w=200&h=200&rs=1);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-menu{
+    grid-area: main-menu;
+}
+nav{
+    justify-content: end;
+}
+
+li{
+    list-style: none;
+    font-size: 1.3em;
+    line-height: 270px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+
+.style-text{
+    font-family: verdana, sans-serif;
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    display: grid;
+    grid-template: "main-img  main-img  main-img" 850px
+                    "article-1  article-2   article-3" 
+                    "article-4  article-5   article-6"/
+                    1fr         1fr         1fr;
+    margin-top: 15px;
+    gap: 40px 70px;
+}
+
+.main-img{
+    grid-area: main-img;
+    background-color: darkcyan;
+    width: 100%;
+    background-image: url(https://th.bing.com/th/id/R.258dbcce7c49843cdbf8bdc973326749?rik=svzc0fMZQX%2bG%2fw&pid=ImgRaw&r=0);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.img-article-1{
+    background-image: url(https://www.yamaha-motor-india.com/theme/products/mt09/color/1.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.img-article-2{
+    background-image: url(https://th.bing.com/th/id/OIP.4zNolUhPfvPcBFJZqKpncgAAAA?pid=ImgDet&rs=1);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.img-article-3{
+    background-image: url(https://th.bing.com/th/id/OIP.erFMT4EB4DcQsM93IKYAMgAAAA?pid=ImgDet&rs=1);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.img-article-4{
+    background-image: url(https://i.pinimg.com/originals/ff/73/21/ff7321b9f7b285c31d7112c574c59c8c.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-article-5{
+    background-image: url(https://th.bing.com/th/id/R.2c6d0d0a594aef26917f3cd4dff9fa81?rik=BFG%2buQ0vPglj%2fw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-EUANC59V8w4%2fUQj-2amuO9I%2fAAAAAAAAF9E%2f_yymroEKod0%2fs1600%2fRaven50th.jpg&ehk=IWt%2b22cdVyvlvBbQWRpUdxGTPhDut66rBUVotCoLqOk%3d&risl=&pid=ImgRaw&r=0);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.img-article-6{
+    background-image: url(https://images.caradisiac.com/images/0/4/5/3/140453/S1-nouveaute-2014-yamaha-les-coloris-race-blu-470525.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.article-1{
+    grid-area: article-1;
+}
+.article-2{
+    grid-area: article-2;
+}
+.article-3{
+    grid-area: article-3;
+}
+.article-4{
+    grid-area: article-4;
+}
+.article-5{
+    grid-area: article-5;
+}
+.article-6{
+    grid-area: article-6;
+}
+.img-article{
+    height: 300px;  
+}
+
+.text-article-1{
+    height: 300px;
+}
+
+.style-text-article{
+    padding-top: 30px;
+    font-size: 1.2em;
+    color: rgb(48,48,48,.9);
+    font-family: verdana, sans-serif;
+    line-height: 1.4em; /* Por defecto vienen en 1.2em  */
+    display: flex;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1100px){
+    li{
+        list-style: none;
+        font-size: 0.9em;
+        line-height: 270px;
+        margin-left: 30px;
+        cursor: pointer;
+    
+    }
+
+    .logo{
+        background-image: url(https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/042011/untitled-1_137.png?itok=HNbXW81x);
+        width: 100%;
+    }
+    body{
+        display: grid;
+        width: 100%;
+        grid-template: "empty-left          main-page             empty-right" 100vh /
+                        minmax(0px, 10px)   minmax(300px, 900px)  minmax(0px, 10px);
+    }
+    header{
+        display: grid;
+        grid-template: "logo  main-menu" 80px/
+                        150px minmax(150px, 260px);
+        gap: 40px;
+        margin-top: 50px;
+    }
+    
+    .main-content{
+        width: 100%;
+        grid-template: 
+                        "empty-left           logo                   main-menu            empty-right"     80px
+                        "empty-left           main-img               main-img             empty-right "      250px 
+                        "empty-left           article-1              article-2            empty-right"     auto
+                        "empty-left           article-3              article-4            empty-right"     auto 
+                        "empty-left           article-5              article-6            empty-right"     auto  /
+                         minmax(0px, 10px)   minmax(300px, 450px)  minmax(300px, 420px)  minmax(0px, 10px);
+    }
+/*     .main-content{
+        width: 100%;
+        grid-template:
+                        "logo"              80px 
+                        "main-img"          250px
+                        "article-1"         auto
+                        "article-2"         auto
+                        "article-3"         auto
+                        "article-4"         auto
+                        "article-5"         auto
+                        "article-6"         auto /
+                        1fr;
+    } */
+    
+}
