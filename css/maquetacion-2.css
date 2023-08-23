@@ -197,7 +197,7 @@ li{
         width: 100%;
         grid-template: 
                         "empty-left           logo                   main-menu            empty-right"     80px
-                        "empty-left           main-img               main-img             empty-right "      250px 
+                        "empty-left           main-img               main-img             empty-right "    250px 
                         "empty-left           article-1              article-2            empty-right"     auto
                         "empty-left           article-3              article-4            empty-right"     auto 
                         "empty-left           article-5              article-6            empty-right"     auto  /
