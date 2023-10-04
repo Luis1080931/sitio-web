@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.main-content{
+    width: 1000px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 10px 0 0 10px;
+}
+.box-subtotal{
+    padding: 20px 20px 12px 20px;
+    font-size: 1.3em;
+}
+#subtotal{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.proceder-pago{
+    /* padding: 0 20px 20px 20px; */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247,231,8);
+    border-radius: 20px;
+    margin: 0 20px 20px 20px;
+    font-size: 1.4em;
+}
+.box-content{
+    display: grid;
+    grid-template: "empty-left box-img box-texto empty-right" /
+                       20px    1.6fr        4fr      20px;
+}
+.box-img{
+    grid-area: box-img;
+    background-color: red;
+}
+.box-texto{
+    grid-area: box-texto;
+    background-color: greenyellow;
+    font-size: 1.4em;
+}
+.box-buttons-cantidad{
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+}
+.box-minus, .box-cant, .box-plus {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-600italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
