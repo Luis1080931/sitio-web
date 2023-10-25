@@ -203,6 +203,27 @@ header{
   display: flex;
   margin-top: 15px;
 }
+.barra-navegacion{
+  width: 100%;
+  background-color: rgba(35, 47, 62);
+  height: 40px;
+}
+.items-menu{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 10px;
+  line-height: 40px;
+}
+.menu-hamburguesa{
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.items{
+  color: white;
+  margin-left: 20px;
+}
 
 /* poppins-300 - latin */
 @font-face {

@@ -48,8 +48,8 @@ body{
 
 .slider .slide-track {
     display: flex;
-    animation: scroll 14s linear infinite;
-    -webkit-animation: scroll 14s linear infinite;
+    animation: scroll 13s linear infinite;
+    -webkit-animation: scroll 13s linear infinite;
     width: calc(200px * 28);
 }
 
@@ -70,8 +70,8 @@ body{
     }
 
     100% {
-        -webkit-transform: translateX(calc(-249px * 23));
-        transform: translateX(calc(-249px * 23));
+        -webkit-transform: translateX(calc(-247px * 25));
+        transform: translateX(calc(-247px * 25));
     }
 }
 
