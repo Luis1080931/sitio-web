@@ -47,7 +47,7 @@ header{
   grid-area: box-texto-enviar-a;
   color: white;
   position: relative;
-  top: 10px;
+  top: 15px;
   font-size: .7em;
   font-weight: 300;
 }
@@ -57,7 +57,7 @@ header{
     font-weight: 500;
     color: white;
     position: relative;
-    bottom: 4px;
+    bottom: -1px;
 }
 .box-header-search-input{
     grid-area: box-header-search-input;
@@ -74,7 +74,7 @@ header{
 }
 .box-filtro-todos{
   grid-area: box-filtro-todos;
-  background-color: white;
+  background-color: #DCDCDC;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -217,12 +217,118 @@ header{
   line-height: 40px;
 }
 .menu-hamburguesa{
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-top: 10px;
 }
 .items{
   color: white;
   margin-left: 20px;
+  font-size: .8em;
+  cursor: pointer;
+}
+.contenedor{
+  height: 100vh;
+  position: static;
+  z-index: 10;
+}
+.box-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0,.5);
+  z-index: 10;
+}
+.modal{
+  width: 97%;
+  height: 80%;
+  z-index: 20;
+  background-color: white;
+  border-radius: 10px;
+}
+.main-content{
+  width: 90%;
+  display: grid;
+  grid-template: "img-product  box-all box-close" /
+                  4fr           1fr     50px;
+}
+.img-product{
+  grid-area: img-product;
+}
+.box-img-principal{
+  display: flex;
+}
+.img-principal{
+  width: 775px;
+  margin-left: 400px;
+}
+.info-product{
+  grid-area: info-product;
+}
+.box-all{
+  grid-area: box-all;
+  display: flex;
+  flex-direction: column;
+}
+.box-text-product{
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 340px;
+  margin-top: 50px;
+  font-size: 1.1em;
+}
+.imagenes{
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: 60px 60px;
+  margin-left: 340px;
+  margin-top: 5px;
+}
+.img-reducidas{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 3px;
+  border: 2px solid #b9b9b9;
+  cursor: pointer;
+}
+.img-reducidas-1{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 3px;
+  border: 2px solid rgba(255, 143, 0);
+  cursor: pointer;
+}
+.img-reducidas:hover{
+  border: 2px solid rgba(0, 75, 145);
+}
+.box-close{
+  grid-area: box-close;
+}
+.box-icon-close{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  margin-left: 26px;
+  margin-top: 6px;
+  border: 3px solid rgba(200, 243, 250);
+  border-radius: 9px;
+}
+.icon-close{
+  font-size: 1.3em;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.icon-close:hover{
+  color: gray;
 }
 
 /* poppins-300 - latin */
