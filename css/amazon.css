@@ -231,7 +231,10 @@ header{
   position: static;
   z-index: 10;
 }
-.box-modal{
+main{
+  display: none;
+}
+main.visible{
   position: fixed;
   top: 0;
   left: 0;
@@ -263,8 +266,11 @@ header{
   display: flex;
 }
 .img-principal{
-  width: 775px;
+  width: 760px;
+  height: 720px;
   margin-left: 400px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .info-product{
   grid-area: info-product;
@@ -298,13 +304,16 @@ header{
   border: 2px solid #b9b9b9;
   cursor: pointer;
 }
-.img-reducidas-1{
+.active{
   width: 50px;
   height: 50px;
   margin: 10px;
   padding: 3px;
   border: 2px solid rgba(255, 143, 0);
   cursor: pointer;
+}
+.img-2{
+  left: -100%;
 }
 .img-reducidas:hover{
   border: 2px solid rgba(0, 75, 145);
@@ -329,6 +338,19 @@ header{
 }
 .icon-close:hover{
   color: gray;
+}
+
+.producto{
+  width: 600px;
+  height: 600px;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+}
+.img-producto{
+  width: 500px;
 }
 
 /* poppins-300 - latin */

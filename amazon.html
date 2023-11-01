@@ -79,42 +79,40 @@
         </ul>
     </nav>
     <div class="contenedor">
-        <div class="box-modal">
-            <div class="modal">
+        <div class="producto">
+            <img class="img-producto" onclick="abrir()" src="https://m.media-amazon.com/images/I/71FLsWWmE8L._SL1500_.jpg" alt=""><br>
+            <label style="font-size: 1.2em;"> Pc gaming capaz de ejecutar todo lo que quieras  </label><br>
+            <label style="font-size: 1.2em; font-weight: 600;"> Click para conocer sus caracteristicas </label>
+        </div>
+        
+        <main id="box-modal">
+            <div class="modal" id="modal">
                 <div class="main-content">
                     <div class="img-product">
-                        <div class="box-img-principal">
-                            <img class="img-principal" src="img/pc-gamer-1.jpg" alt="">
+                        <div id="boxMainImg" class="box-main box-img-principal">
+                            <img id="img-principal" class="img-principal" src="https://m.media-amazon.com/images/I/71FLsWWmE8L._SL1500_.jpg" alt="" srcset="">
                         </div>
                         
                     </div>
                     <div class="box-all">
                         <div class="info-product">
                             <div class="box-text-product">
-                                <p> CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i7-13700F 2.1GHz, GeForce RTX 4060 Ti 16GB, 16GB DDR5, 1TB NVMe SSD, listo para Wi-Fi y Windows 11 Home...</p>
+                                <p> CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i7-13700F 2.1GHz, GeForce RTX 4060 Ti 16GB, 16GB DDR5, 1TB NVMe SSD, listo para Wi-Fi y Windows 11 Home (GXiVR8040A12), negro </p>
                             </div>
                         
                         </div>
-                        <div class="imagenes">
-                            <div class="img-1">
-                                <img class="img-reducidas-1" src="img/pc-gamer-1.jpg" alt="">
-                            </div>
-                            <div class="img-2">
-                                <img class="img-reducidas" src="img/pc-gamer-2.jpg" alt="">
-                            </div>
-                            <div class="img-3">
-                                <img class="img-reducidas" src="img/pc-gamer-3.jpg" alt="">
-                            </div>
-                            <div class="img-4">
-                                <img class="img-reducidas" src="img/pc-gamer-4.jpg" alt="">
-                            </div>
-                            <div class="img-5">
-                                <img class="img-reducidas" src="img/pc-gamer-5.jpg" alt="">
-                            </div>
+                        <div id="imagenes" class="imagenes">
+                            
+                                <img id="img-1" class="img-reducidas active" src="img/pc-gamer-1.jpg" alt="">
+                                <img id="img-2" class="img-reducidas" src="https://m.media-amazon.com/images/I/71-V2XmjtSL._SL1500_.jpg" alt="">
+                                <img id="img-3" class="img-reducidas" src="https://m.media-amazon.com/images/I/81kwBVSocBL._SL1500_.jpg" alt="">
+                                <img id="img-4" class="img-reducidas" src="https://m.media-amazon.com/images/I/81WEprlftIL._SL1500_.jpg" alt="">
+                                <img id="img-5" class="img-reducidas" src="https://m.media-amazon.com/images/I/81AaNfH-llL._SL1500_.jpg" alt="">
+                           
                         </div>
                     </div>
                     <div class="box-close">
-                        <div class="box-icon-close">
+                        <div id="close" class="box-icon-close">
                             <i class="icon-close fa-solid fa-xmark"></i>
                         </div>
                     </div>
@@ -122,7 +120,7 @@
                 </div>
             </div>
             
-        </div>
+        </main>
     </div>
     
 
