@@ -340,17 +340,246 @@ main.visible{
   color: gray;
 }
 
-.producto{
-  width: 600px;
-  height: 600px;
-  border: 1px solid #000;
+.infoProductoTop{
+  display: grid;
+  grid-template: "imgProductoTop  txtProductoTop  calificaciones  precio  prime"/
+                    100px              800px             130px      70px    70px;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #cccccc;
   justify-content: center;
+  background-color: #f0f0f0;
+}
+.imgProductoTop{
+  grid-area: imgProductoTop;
+}
+.img{
+  display: flex;
+  margin-left: 30px;
+}
+.imgTop{
+  display: flex;
+  width: 50px;
+}
+.txtProductoTop{
+  grid-area: txtProductoTop;
+  display: flex;
   align-items: center;
+}
+.txt{
+  font-size: .8em;
+  font-weight: 600;
+}
+.calificaciones{
+  grid-area: calificaciones;
+  display: flex;
+  align-items: center;
+}
+.estrellas{
+  display: flex;
+}
+.start{
+  color: goldenrod;
+  font-size: .9em;
+}
+.unidadCalificaciones{
+  font-size: .7em;
+}
+.precio{
+  grid-area: precio;
+  display: flex;
+  align-items: center;
+}
+.peso{
+  font-size: .8em;
+}
+.precioOfi{
+  font-size: 1.5em;
+  color: #A52A2A;
+  font-weight: 500;
+}
+.precioPeque{
+  font-size: .8em;
+  color: #A52A2A;
+}
+.prime{
+  grid-area: prime;
+  display: flex;
+  align-items: center;
+}
+.icon-prime{
+  font-size: .7em;
+  color: goldenrod;
+}
+.txtPrime{
+  font-size: .8em;
+  font-weight: 600;
+  color: rgb(0, 162, 255);
+}
+.volverPatrocinador{
+  display: flex;
+  justify-content: space-between;
+}
+.volver{
+  margin-left: 215px;
+  margin-top: 10px;
+}
+.chevron-left{
+  font-size: .4em;
+}
+.volverResult{
+  font-size: .7em;
+}
+.patro{
+  font-size: .7em;
+}
+.exclaim{
+  font-size: .7em;
+  color: GRAY;
+}
+.contenedor{
+  display: grid;
+  grid-template: "imagenesPeque   producto    iconChevronTop    text-all    box-info" /
+                    270px          425px         48px              650px       200px;
+}
+.imagenesPeque{
+  grid-area: imagenesPeque;
+}
+.imags{
+  display: flex;
+  flex-direction: column;
+  margin-left: 210px;
+  margin-top: 15px;
+}
+.imagesReducidas{
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  padding: 3px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.producto{
+  grid-area: producto;
   text-align: center;
-  margin: 50px;
 }
 .img-producto{
   width: 500px;
+}
+.iconChevronTop{
+  grid-area: iconChevronTop;
+}
+.iconArriba{
+  margin-top: 37px;
+  font-size: 1.2em;
+}
+.text-all{
+  grid-area: text-all;
+}
+.textComputer{
+  font-size: 1.4em;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.box-info{
+  grid-area: box-info;
+}
+.precioInfo{
+  display: flex;
+  align-items: center;
+}
+.box{
+  margin-left: 50px;
+  margin-top: 25px;
+  border: 1px solid #DCDCDC;
+  padding: 15px;
+  width: 240px;
+  border-radius: 10px;
+}
+.us{
+  font-size: .8em;
+}
+.preci{
+  font-size: 1.6em;
+  font-weight: 500;
+}
+.preciPeque{
+  font-size: .8em;
+}
+.txtGeneralInfo{
+  margin-top: 15px;
+  font-size: .8em;
+  color: rgb(92, 92, 92);
+  width: 200px;
+}
+.detalles{
+  color: rgb(2, 118, 185);
+  font-weight: 500;
+}
+.iconDetalles{
+  font-size: .7em;
+  color: gray;
+}
+.entrega{
+  font-weight: 600;
+  color: #000;
+}
+.time{
+  color: rgb(3, 172, 3);
+  font-weight: 600;
+}
+.envios{
+  margin-top: 10px;
+}
+.locationEnvios{
+  font-size: .8em;
+}
+.enviar-a{
+  font-size: .7em;
+  color: rgb(2, 118, 185);
+  font-weight: 600;
+}
+.disponible{
+  margin-top: 10px;
+  color: rgb(2, 139, 2);
+}
+.cantidad{
+  border: 1px solid gray;
+  width: 85px;
+  height: 20px;
+  background-color: #e7e7e7;
+  border-radius: 20PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.cantidadPro{
+  font-size: .6em;
+}
+.iconCantidad{
+  font-size: .7em;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.buttons{
+  margin-top: 10px;
+}
+.button-1{
+  width: 200px;
+  height: 30px;
+  background-color: rgb(255, 216, 20);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.button-2{
+  width: 200px;
+  height: 30px;
+  background-color: rgb(255, 164, 28);
+  border: none;
+  border-radius: 20px;
 }
 
 /* poppins-300 - latin */
