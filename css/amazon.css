@@ -379,7 +379,7 @@ main.visible{
   display: flex;
 }
 .start{
-  color: goldenrod;
+  color: orange;
   font-size: .9em;
 }
 .unidadCalificaciones{
@@ -461,7 +461,7 @@ main.visible{
   cursor: pointer;
 }
 .imagesReducidas:hover{
-  box-shadow: 2px 2px rgb(200, 243, 250);
+  box-shadow: 0px 1px 5px 1px  rgb(93, 173, 250);
 }
 .imgActive{
   width: 45px;
@@ -471,7 +471,7 @@ main.visible{
   border: 1px solid #000;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px rgb(200, 243, 250);
+  box-shadow: 0px 1px 5px 1px  rgb(93, 173, 250);
 }
 .producto{
   grid-area: producto;
@@ -487,6 +487,8 @@ main.visible{
 .iconArriba{
   margin-top: 37px;
   font-size: 1.2em;
+  background-color: #fff;
+  border-radius: 20px;
 }
 .text-all{
   grid-area: text-all;
@@ -508,7 +510,7 @@ main.visible{
 .caliRespuesta{
   display: grid;
   grid-template: "boxCali  boxEstrellas   boxIcon   boxTxtCali  boxBarra  boxRespuesta" /
-                    30px      90px          40px        150px      20px;
+                    30px      90px          30px        115px      15px;
   align-items: center;
 }
 .boxVisitas{
@@ -529,8 +531,14 @@ main.visible{
 .boxTxtCali{
   grid-area: boxTxtCali;
 }
-.txtCali{
-  font-size: .9em;
+.txtCaliRespuesta{
+  font-size: .8em;
+  color: rgb(0, 113, 165);
+}
+.txtCaliRespuesta:hover{
+  color: rgb(204, 111, 70);
+  cursor: pointer;
+  text-decoration: underline;
 }
 .boxBarra{
   grid-area: boxBarra;
@@ -646,6 +654,85 @@ main.visible{
   border-radius: 20px;
 }
 
+.filtro{
+  display: flex;
+  justify-content: space-between;
+  height: 37px;
+  border-bottom: 1px solid #DCDCDC;
+  box-shadow: 0px 1px 5px gray;
+  align-items: center;
+  font-size: .8em;
+}
+.txtFiltro{
+  margin-left: 60px;
+}
+.pc{
+  color: rgb(200, 85, 0);
+  font-weight: 600;
+}
+.iconFiltro{
+  border: 1px solid gray;
+  width: 150px;
+  height: 20px;
+  background-color: #ebe9e9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: .8em;
+  margin-right: 60px;
+}
+
+.mainContent{
+  display: grid;
+  grid-template: "clasificar    boxImgProducto    txtProductoPrincipal"/
+                    320px         400px             800px;
+}
+.clasificar{
+  grid-area: clasificar;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.txtFil{
+  font-weight: 600;
+  font-size: .9em;
+}
+.txtPrincipalAll{
+  font-size: .9em;
+}
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.txtPrincipalBold{
+  font-size: .9em;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.mas{
+  font-size: .7em;
+}
+.boxImgProducto{
+  grid-area: boxImgProducto;
+  display: flex;
+  flex-direction: column;
+}
+.txtResult{
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-left: 30px;
+  margin-top: 120px;
+}
+.imgProducto{
+  width: 150px;
+}
+.imgPri{
+  width: 250px;
+}
+.txtProductoPrinciapl{
+  grid-area: txtProductoPrinciapl;
+}
 /* poppins-300 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

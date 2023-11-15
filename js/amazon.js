@@ -4,6 +4,9 @@ let img2 = document.getElementById("img-2")
 let img3 = document.getElementById("img-3")
 let img4 = document.getElementById("img-4")
 let img5 = document.getElementById("img-5")
+
+let principal = document.getElementById("principal")
+
 let modal = document.getElementById("box-modal")
 let close = document.getElementById("close")
 
@@ -54,7 +57,7 @@ image5.addEventListener("mouseover", function() {
 })
 
 window.onload = () => {
-    modal.classList.remove("box-modal")
+    modal.classList.remove("principal")
 }
 
 function setActive(img){
