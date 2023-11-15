@@ -479,7 +479,7 @@ main.visible{
 }
 .img-producto{
   width: 500px;
-  max-width: 400px;
+  max-width: 460px;
 }
 .iconChevronTop{
   grid-area: iconChevronTop;
@@ -495,6 +495,48 @@ main.visible{
   font-size: 1.4em;
   margin-top: 20px;
   font-weight: 500;
+}
+.visitas{
+  color: rgb(0, 113, 165);
+  font-size: .8em;
+}
+.visitas:hover{
+  color: rgb(204, 111, 70);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.caliRespuesta{
+  display: grid;
+  grid-template: "boxCali  boxEstrellas   boxIcon   boxTxtCali  boxBarra  boxRespuesta" /
+                    30px      90px          40px        150px      20px;
+  align-items: center;
+}
+.boxVisitas{
+  grid-area: boxVisitas;
+}
+.boxCali{
+  grid-area: boxCali;
+}
+.boxEstrellas{
+  grid-area: boxEstrellas;
+}
+.boxIcon{
+  grid-area: boxIcon;
+}
+.iconChevronCali{
+  font-size: .7em;
+}
+.boxTxtCali{
+  grid-area: boxTxtCali;
+}
+.txtCali{
+  font-size: .9em;
+}
+.boxBarra{
+  grid-area: boxBarra;
+}
+.boxRespuesta{
+  grid-area: boxRespuesta;
 }
 .box-info{
   grid-area: box-info;
@@ -531,6 +573,10 @@ main.visible{
   color: rgb(2, 118, 185);
   font-weight: 500;
 }
+.detalles:hover{
+  color: rgb(204, 111, 70);
+  cursor: pointer;
+}
 .iconDetalles{
   font-size: .7em;
   color: gray;
@@ -553,6 +599,10 @@ main.visible{
   font-size: .7em;
   color: rgb(2, 118, 185);
   font-weight: 600;
+}
+.enviar-a:hover{
+  color: rgb(204, 111, 70);
+  cursor: pointer;
 }
 .disponible{
   margin-top: 10px;
