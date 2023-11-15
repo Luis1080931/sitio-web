@@ -460,12 +460,26 @@ main.visible{
   border-radius: 10px;
   cursor: pointer;
 }
+.imagesReducidas:hover{
+  box-shadow: 2px 2px rgb(200, 243, 250);
+}
+.imgActive{
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  padding: 3px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px rgb(200, 243, 250);
+}
 .producto{
   grid-area: producto;
   text-align: center;
 }
 .img-producto{
   width: 500px;
+  max-width: 400px;
 }
 .iconChevronTop{
   grid-area: iconChevronTop;
