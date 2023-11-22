@@ -226,6 +226,8 @@ header{
   font-size: .8em;
   cursor: pointer;
 }
+
+
 .contenedor{
   height: 100vh;
   position: static;
@@ -429,6 +431,7 @@ main.visible{
 }
 .volverResult{
   font-size: .7em;
+  cursor: pointer;
 }
 .patro{
   font-size: .7em;
@@ -437,7 +440,9 @@ main.visible{
   font-size: .7em;
   color: GRAY;
 }
-.contenedor{
+
+
+main.contenedor{
   display: grid;
   grid-template: "imagenesPeque   producto    iconChevronTop    text-all    box-info" /
                     270px          425px         48px              650px       200px;
@@ -684,7 +689,7 @@ main.visible{
   margin-right: 60px;
 }
 
-.mainContent{
+main.mainContent{
   display: grid;
   grid-template: "clasificar    boxImgProducto    txtProductoPrincipal"/
                     320px         400px             800px;

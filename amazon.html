@@ -79,7 +79,7 @@
             <li class="items"> Vender </li>
         </ul>
     </nav>
-    <div class="resultados">
+    <main id="resultados">
         <div class="filtro">
             <div class="txtFiltro">
                 <span>1 a 16 de más de 50,000 resultados para </span><span class="pc">"pc gaming"</span>
@@ -129,7 +129,7 @@
             <div class="boxImgProducto">
                 <span class="txtResult"> Resultados </span><br>
                 <div class="imgProducto">
-                    <img class="imgPri" src="img/pc-gamer-1.jpg" alt="">
+                    <img onclick="ir()" class="imgPri" src="img/pc-gamer-1.jpg" alt="">
                 </div>
                 
             </div>
@@ -146,138 +146,139 @@
                 <span>Entrega el <span class="entrega">vie, 24 de nov </span> a Colombia </span>
             </div>
         </div>
-    </div>
+    </main>
 
-    <div id="principal" class="principal">
-            <div class="infoProductoTop">
-            <div class="imgProductoTop">
-                <div class="img">
-                    <img class="imgTop" src="https://m.media-amazon.com/images/I/71MT3FFUGiL.jpg" alt="">
+    <div id="todo" class="todo">
+        <div id="principal" class="principal">
+                <div class="infoProductoTop">
+                <div class="imgProductoTop">
+                    <div class="img">
+                        <img class="imgTop" src="https://m.media-amazon.com/images/I/71MT3FFUGiL.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="txtProductoTop">
-                <div class="txt">
-                    <span> MXZ Computadora de escritorio para videojuegos, AMD Ryzen 5 4500, RX 6600 8GB, 16FB DDR4,</span><br>
-                    <span> NVME 500GB SSD, ventiladores 6RGB, Win 11 Pro Ready, computadora de escritorio GAMER (R5 450...</span>
+                <div class="txtProductoTop">
+                    <div class="txt">
+                        <span> MXZ Computadora de escritorio para videojuegos, AMD Ryzen 5 4500, RX 6600 8GB, 16FB DDR4,</span><br>
+                        <span> NVME 500GB SSD, ventiladores 6RGB, Win 11 Pro Ready, computadora de escritorio GAMER (R5 450...</span>
+                    </div>
                 </div>
-            </div>
-            <div class="calificaciones">
-                <div class="estrellas">
-                    <i class="start fa-solid fa-star"></i>
-                    <i class="start fa-solid fa-star"></i>
-                    <i class="start fa-solid fa-star"></i>
-                    <i class="start fa-solid fa-star"></i>
-                    <i class="start fa-regular fa-star"></i>
-                    <span class="unidadCalificaciones">492</span>
-                </div>
-            </div>
-            <div class="precio">
-                <span class="peso"> $ </span>
-                <span class="precioOfi"> 479 </span>
-                <span class="precioPeque"> 99 </span>
-            </div>
-            <div class="prime">
-                <i class="icon-prime fa-solid fa-check"></i>
-                <span class="txtPrime"> prime </span>
-            </div>
-        </div>
-        <div class="volverPatrocinador">
-            <div class="volver">
-                <i class="chevron-left fa-solid fa-chevron-left"></i>
-                <span class="volverResult"> Volver a resultados </span>
-            </div>
-            <div class="patrocinador">
-                <span class="patro"> Patrocinado </span>
-                <i class="exclaim fa-solid fa-circle-exclamation"></i>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="contenedor">
-        <div class="imagenesPeque">
-            <div class="imags">
-                <img id="image-1" class="imagesReducidas imgActive" src="img/pc-gamer-1.jpg" alt="">
-                <img id="image-2" class="imagesReducidas" src="https://m.media-amazon.com/images/I/71-V2XmjtSL._SL1500_.jpg" alt="">
-                <img id="image-3" class="imagesReducidas" src="https://m.media-amazon.com/images/I/81kwBVSocBL._SL1500_.jpg" alt="">
-                <img id="image-4" class="imagesReducidas" src="https://m.media-amazon.com/images/I/81WEprlftIL._SL1500_.jpg" alt="">
-                <img id="image-5" class="imagesReducidas" src="https://m.media-amazon.com/images/I/81AaNfH-llL._SL1500_.jpg" alt="">
-            </div>
-        </div>
-        <div class="producto">
-            <img id="imagePrincipal" class="img-zoom img-producto" onclick="abrir()" src="https://m.media-amazon.com/images/I/71FLsWWmE8L._SL1500_.jpg" data-zoom-image="https://m.media-amazon.com/images/I/71FLsWWmE8L._SL1500_.jpg" alt="">
-            <label style="font-size: .8em; color: gray;"> Pasa el mouse encima de la imagen para aplicar zoom  </label>
-        </div>
-        <div class="iconChevronTop">
-            <div class="iconArriba">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            </div>
-        </div>
-        <div class="text-all">
-            <div class="textComputer">
-                <p>CYBERRPOWERPC Gamer Xtreme VR Gaming PC, Intel Core i7-12700KF 3.6GHz, GeForce RTX 3060 12GB, 16GB DDR4, 500GB PCI-E NVMe SSD, 2TB HDD, WiFi Ready & Win 11 Home (GXiVR8400A10), negro2</p>
-            </div>
-            <div class="boxVisitas">
-                <span class="visitas"> Visita la tienda de CyberpowerPC </span>
-            </div>
-            <div class="caliRespuesta">
-                <div class="boxCali">
-                    <span class="cali"> 4.7 </span>
-                </div>
-                <div class="boxEstrellas">
-                    <span class="estrellas">
+                <div class="calificaciones">
+                    <div class="estrellas">
                         <i class="start fa-solid fa-star"></i>
                         <i class="start fa-solid fa-star"></i>
                         <i class="start fa-solid fa-star"></i>
                         <i class="start fa-solid fa-star"></i>
                         <i class="start fa-regular fa-star"></i>
-                </span>
+                        <span class="unidadCalificaciones">492</span>
+                    </div>
                 </div>
-                <div class="boxIcon">
-                    <span class="iconChevronCali"> <i class="iconDetalles fa-solid fa-chevron-down"></i> </span>
+                <div class="precio">
+                    <span class="peso"> $ </span>
+                    <span class="precioOfi"> 479 </span>
+                    <span class="precioPeque"> 99 </span>
                 </div>
-                <div class="boxTxtCali">
-                    <span class="txtCaliRespuesta"> 83 calificaciones</span>
+                <div class="prime">
+                    <i class="icon-prime fa-solid fa-check"></i>
+                    <span class="txtPrime"> prime </span>
                 </div>
-                <div class="boxBarra">
-                    <span class="barra"> | </span>
-                </div>
-                <div class="boxRespuesta">
-                    <span class="txtCaliRespuesta"> 17 preguntas respondidas </span>
-                </div>
-                
             </div>
-        </div>
-        <div class="box-info">
-            <div class="box">
-                <div class="precioInfo">
-                    <span class="us"> US$ </span>
-                    <span class="preci"> 1,799 </span>
-                    <span class="preciPeque"> 99 </span>
+            <div class="volverPatrocinador">
+                <div class="volver">
+                    <i class="chevron-left fa-solid fa-chevron-left"></i>
+                    <span class="volverResult" onclick="volverResults()"> Volver a resultados </span>
                 </div>
-                <div class="txtGeneralInfo">
-                    <p>Sin depósito de derechos de importación y US$108.10 de envío a Colombia <span class="detalles"> Detalles <i class="iconDetalles fa-solid fa-chevron-down"></i></span>
-                        Entrega el <span class="entrega"> viernes, 24 de noviembre </span> a Colombia </p><br>
-                    <p>O entrega más rápida el viernes, <span class="entrega"> 17 de noviembre. </span> Realiza el pedido en <span class="time"> 9 hrs 39 mins </span></p>
-                </div>
-                <div class="envios">
-                    <i class="locationEnvios fa-solid fa-location-dot"></i>
-                    <span class="enviar-a"> Enviar a Colombia </span>
-                </div>
-                <div class="disponible">
-                    <span class="uniDisponible"> Disponible </span>
-                </div>
-                <div class="cantidad">
-                    <span class="cantidadPro"> Cantidad:   1 </span>
-                    <i class="iconCantidad fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="buttons">
-                    <button class="button-1"> Agregar al carrito </button>
-                    <button class="button-2"> Comprar ahora </button>
+                <div class="patrocinador">
+                    <span class="patro"> Patrocinado </span>
+                    <i class="exclaim fa-solid fa-circle-exclamation"></i>
                 </div>
             </div>
         </div>
-        
+    
+        <main id="contenedor" class="contenedor">
+            <div class="imagenesPeque">
+                <div class="imags">
+                    <img id="image-1" class="imagesReducidas imgActive" src="img/pc-gamer-1.jpg" alt="">
+                    <img id="image-2" class="imagesReducidas" src="https://m.media-amazon.com/images/I/71-V2XmjtSL._SL1500_.jpg" alt="">
+                    <img id="image-3" class="imagesReducidas" src="https://m.media-amazon.com/images/I/81kwBVSocBL._SL1500_.jpg" alt="">
+                    <img id="image-4" class="imagesReducidas" src="https://m.media-amazon.com/images/I/81WEprlftIL._SL1500_.jpg" alt="">
+                    <img id="image-5" class="imagesReducidas" src="https://m.media-amazon.com/images/I/81AaNfH-llL._SL1500_.jpg" alt="">
+                </div>
+            </div>
+            <div class="producto">
+                <img id="imagePrincipal" class="img-zoom img-producto" onclick="abrir()" src="https://m.media-amazon.com/images/I/71FLsWWmE8L._SL1500_.jpg" data-zoom-image="https://m.media-amazon.com/images/I/71FLsWWmE8L._SL1500_.jpg" alt="">
+                <label style="font-size: .8em; color: gray;"> Pasa el mouse encima de la imagen para aplicar zoom  </label>
+            </div>
+            <div class="iconChevronTop">
+                <div class="iconArriba">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </div>
+            </div>
+            <div class="text-all">
+                <div class="textComputer">
+                    <p>CYBERRPOWERPC Gamer Xtreme VR Gaming PC, Intel Core i7-12700KF 3.6GHz, GeForce RTX 3060 12GB, 16GB DDR4, 500GB PCI-E NVMe SSD, 2TB HDD, WiFi Ready & Win 11 Home (GXiVR8400A10), negro2</p>
+                </div>
+                <div class="boxVisitas">
+                    <span class="visitas"> Visita la tienda de CyberpowerPC </span>
+                </div>
+                <div class="caliRespuesta">
+                    <div class="boxCali">
+                        <span class="cali" id="cali"></span>
+                    </div>
+                    <div class="boxEstrellas">
+                        <span class="estrellas">
+                            <i class="start" id="start1"></i>
+                            <i class="start" id="start2"></i>
+                            <i class="start" id="start3"></i>
+                            <i class="start" id="start4"></i>
+                            <i class="start" id="start5"></i>
+                    </span>
+                    </div>
+                    <div class="boxIcon">
+                        <span class="iconChevronCali"> <i class="iconDetalles fa-solid fa-chevron-down"></i> </span>
+                    </div>
+                    <div class="boxTxtCali">
+                        <span class="txtCaliRespuesta"> 83 calificaciones</span>
+                    </div>
+                    <div class="boxBarra">
+                        <span class="barra"> | </span>
+                    </div>
+                    <div class="boxRespuesta">
+                        <span class="txtCaliRespuesta"> 17 preguntas respondidas </span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="box-info">
+                <div class="box">
+                    <div class="precioInfo">
+                        <span class="us"> US$ </span>
+                        <span class="preci"> 1,799 </span>
+                        <span class="preciPeque"> 99 </span>
+                    </div>
+                    <div class="txtGeneralInfo">
+                        <p>Sin depósito de derechos de importación y US$108.10 de envío a Colombia <span class="detalles"> Detalles <i class="iconDetalles fa-solid fa-chevron-down"></i></span>
+                            Entrega el <span class="entrega"> viernes, 24 de noviembre </span> a Colombia </p><br>
+                        <p>O entrega más rápida el viernes, <span class="entrega"> 17 de noviembre. </span> Realiza el pedido en <span class="time"> 9 hrs 39 mins </span></p>
+                    </div>
+                    <div class="envios">
+                        <i class="locationEnvios fa-solid fa-location-dot"></i>
+                        <span class="enviar-a"> Enviar a Colombia </span>
+                    </div>
+                    <div class="disponible">
+                        <span class="uniDisponible"> Disponible </span>
+                    </div>
+                    <div class="cantidad">
+                        <span class="cantidadPro"> Cantidad:   1 </span>
+                        <i class="iconCantidad fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-1"> Agregar al carrito </button>
+                        <button class="button-2"> Comprar ahora </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
         <main id="box-modal">
             <div class="modal" id="modal">
                 <div class="main-content">
@@ -314,7 +315,6 @@
             </div>
             
         </main>
-    </div>
     
 
     <script src="js/amazon.js"></script>
