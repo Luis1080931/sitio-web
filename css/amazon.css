@@ -352,6 +352,9 @@ main.visible{
   justify-content: center;
   background-color: #f0f0f0;
 }
+.infoProductoTop2{
+  display: none;
+}
 .imgProductoTop{
   grid-area: imgProductoTop;
 }
@@ -442,10 +445,13 @@ main.visible{
 }
 
 
-main.contenedor{
+.contenedor{
   display: grid;
   grid-template: "imagenesPeque   producto    iconChevronTop    text-all    box-info" /
                     270px          425px         48px              650px       200px;
+}
+.contenedor2{
+  display: none;
 }
 .imagenesPeque{
   grid-area: imagenesPeque;
@@ -689,10 +695,13 @@ main.contenedor{
   margin-right: 60px;
 }
 
-main.mainContent{
+.mainContent{
   display: grid;
   grid-template: "clasificar    boxImgProducto    txtProductoPrincipal"/
-                    320px         400px             800px;
+                    320px         350px             870px;
+}
+.mainContent2{
+  display: none;
 }
 .clasificar{
   grid-area: clasificar;
@@ -722,21 +731,27 @@ hr{
   grid-area: boxImgProducto;
   display: flex;
   flex-direction: column;
+  margin-left: 65px;
 }
 .txtResult{
   font-weight: 600;
   font-size: 1.2em;
   margin-left: 30px;
-  margin-top: 120px;
+  margin-top: 20px;
 }
 .imgProducto{
   width: 150px;
 }
 .imgPri{
   width: 250px;
+  cursor: pointer;
 }
-.txtProductoPrinciapl{
-  grid-area: txtProductoPrinciapl;
+.txtProductoPrincipal{
+  grid-area: txtProductoPrincipal;
+  margin-top: 80px;
+}
+.spanTxt{
+  font-size: 1.1em;
 }
 /* poppins-300 - latin */
 @font-face {

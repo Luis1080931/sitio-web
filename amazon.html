@@ -79,7 +79,9 @@
             <li class="items"> Vender </li>
         </ul>
     </nav>
-    <main id="resultados">
+
+    <!-- PRIMERA PANTALLA DE RESULTADOS -->
+    <div id="resultados">
         <div class="filtro">
             <div class="txtFiltro">
                 <span>1 a 16 de más de 50,000 resultados para </span><span class="pc">"pc gaming"</span>
@@ -134,21 +136,22 @@
                 
             </div>
             <div class="txtProductoPrincipal">
-                <span>Patrocinado <i class="exclaim fa-solid fa-circle-exclamation"></i></span><br>
-                <span>CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i7-13700F 2.1GHz, GeForce RTX 4060 Ti 16GB, 16GB DDR5, 1TB NVMe SSD, listo para Wi-Fi y Windows 11 Home (GXiVR8040A14)</span><br>
+                <span class="patro">Patrocinado <i class="exclaim fa-solid fa-circle-exclamation"></i></span><br>
+                <span class="spanTxt">CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i7-13700F 2.1GHz, GeForce RTX 4060 Ti 16GB, 16GB DDR5, 1TB NVMe SSD, listo para Wi-Fi y Windows 11 Home (GXiVR8040A14)</span><br>
                 <i class="start fa-solid fa-star"></i>
                 <i class="start fa-solid fa-star"></i>
                 <i class="start fa-solid fa-star"></i>
                 <i class="start fa-solid fa-star"></i>
                 <i class="start fa-regular fa-star"></i> <i class="fa-solid fa-chevron-down"></i><span> 83 </span><br>
                 
-                <span>us$</span><span>1,299</span><span>99</span><br>
-                <span>Entrega el <span class="entrega">vie, 24 de nov </span> a Colombia </span>
+                <span class="us">us$</span><span class="preci">1,299</span><span class="preciPeque">99</span><br>
+                <span class="txtGeneralInfo">Entrega el <span class="entrega">vie, 24 de nov </span> a Colombia </span>
             </div>
         </div>
-    </main>
+    </div>
 
     <div id="todo" class="todo">
+        <!-- PUBLICIDAD QUE APARECE EN LA PARTE SUPERIOR -->
         <div id="principal" class="principal">
                 <div class="infoProductoTop">
                 <div class="imgProductoTop">
@@ -194,7 +197,8 @@
             </div>
         </div>
     
-        <main id="contenedor" class="contenedor">
+        <!-- SEGUNDA PANTALLA LA CUAL PERMITE ABRIR EL MODAL -->
+        <div id="contenedor" class="contenedor">
             <div class="imagenesPeque">
                 <div class="imags">
                     <img id="image-1" class="imagesReducidas imgActive" src="img/pc-gamer-1.jpg" alt="">
@@ -277,8 +281,9 @@
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+
+        <!-- PANTALLA DEL MODAL -->
         <main id="box-modal">
             <div class="modal" id="modal">
                 <div class="main-content">
@@ -313,7 +318,6 @@
                     
                 </div>
             </div>
-            
         </main>
     
 

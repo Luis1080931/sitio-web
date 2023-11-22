@@ -4,12 +4,6 @@ let start3 = document.getElementById("start3")
 let start4 = document.getElementById("start4")
 let start5 = document.getElementById("start5")
 let puntuacion = document.getElementById("cali").innerText = 4.7
-/* let button = document.getElementById("marcar") */
-
-
-/* button.addEventListener("click", () => { */
-
-    /* let puntuacion = 3 */
     
     if(puntuacion >= 0 && puntuacion <= 0.2) {
         start1.setAttribute("class", "start fa-regular fa-star")
@@ -89,8 +83,6 @@ let puntuacion = document.getElementById("cali").innerText = 4.7
         start5.setAttribute("class", "start fa-solid fa-star")
     }
 
-//})
-
 let imgMain = document.getElementById("img-principal")
 let img1 = document.getElementById("img-1")
 let img2 = document.getElementById("img-2")
@@ -98,12 +90,8 @@ let img3 = document.getElementById("img-3")
 let img4 = document.getElementById("img-4")
 let img5 = document.getElementById("img-5")
 
-let principal = document.getElementById("principal")
-let resultados = document.getElementById("resultados")
-
 let modal = document.getElementById("box-modal")
 let close = document.getElementById("close")
-let contenedor = document.getElementById("todo")
 
 let imagePrincipal = document.getElementById("imagePrincipal")
 let image1 = document.getElementById("image-1")
@@ -152,7 +140,8 @@ image5.addEventListener("mouseover", function() {
 })
 
 window.onload = () => {
-    modal.classList.remove("contenedor")
+    contenedor.classList.add("contenedor2")
+    principal.classList.add("infoProductoTop2")
 }
 
 function setActive(img){
@@ -203,6 +192,10 @@ img5.addEventListener("click", function() {
     
 })
 
+let principal = document.getElementById("principal")
+let resultados = document.getElementById("resultados")
+let contenedor = document.getElementById("contenedor")
+
 close.addEventListener("click", function() {
     modal.classList.remove("visible")
 })
@@ -212,9 +205,13 @@ function abrir(){
 }
 
 function ir(){
-    contenedor.classList.add("todo")
+    resultados.classList.add("mainContent2")
+    principal.classList.remove("infoProductoTop2")
+    contenedor.classList.remove("contenedor2")
 }
 
 function volverResults(){
-    contenedor.classList.remove("contenedor")
+    contenedor.classList.add("contenedor2")
+    principal.classList.add("infoProductoTop2")
+    resultados.classList.remove("mainContent2")
 }
