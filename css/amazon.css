@@ -382,6 +382,7 @@ main.visible{
 }
 .estrellas{
   display: flex;
+  cursor: pointer;
 }
 .start{
   color: orange;
@@ -521,7 +522,7 @@ main.visible{
 .caliRespuesta{
   display: grid;
   grid-template: "boxCali  boxEstrellas   boxIcon   boxTxtCali  boxBarra  boxRespuesta" /
-                    30px      90px          30px        115px      15px;
+                    30px      100px          30px        115px      15px  200px;
   align-items: center;
 }
 .boxVisitas{
@@ -532,7 +533,9 @@ main.visible{
 }
 .boxEstrellas{
   grid-area: boxEstrellas;
+  cursor: pointer;
 }
+
 .boxIcon{
   grid-area: boxIcon;
 }
@@ -753,6 +756,84 @@ hr{
 .spanTxt{
   font-size: 1.1em;
 }
+
+/* ESTRELLAS */
+
+.cal-box {
+  position: relative;
+  display: none;
+  width: 370px;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.cal {
+  width: 200px;
+  height: 20px;
+  border: 1px solid gray;
+  background-color: #DCDCDC;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.cal > div {
+  background-color: orange;
+  height: 18px;
+  transition: 1s all linear;
+  width: 0;
+  border-radius: 5px;
+}
+.startInline{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+
+.spanStart{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.caliStart{
+  font-size: .8em;
+  color: gray;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.txtPorcent{
+  font-size: .9em;
+  margin-top: 12px;
+  color: rgb(2, 118, 185);
+}
+
+.iconStart{
+  font-size: .6em;
+  color: rgb(2, 118, 185);
+  margin-top: 18px;
+  margin-left: 5px;
+}
+
+.txtOpiniones{
+  font-size: .9em;
+  margin-top: 12px;
+  color: rgb(2, 118, 185);
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+hr{
+  margin-bottom: 15px;
+  color: #f7f7f7;
+}
+
 /* poppins-300 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

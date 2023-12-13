@@ -1,3 +1,81 @@
+let cal = document.getElementById("cal-box")
+let star = document.getElementById("start")
+
+let resul = document.getElementById("resultado")
+
+let barra_cinco = document.getElementById("resultado_cinco")
+let barra_cuatro = document.getElementById("resultado_cuatro")
+let barra_tres = document.getElementById("resultado_tres")
+let barra_dos = document.getElementById("resultado_dos")
+let barra_uno = document.getElementById("resultado_uno")
+
+let porcentaje5 = document.getElementById("porcentaje5")
+let porcentaje4 = document.getElementById("porcentaje4")
+let porcentaje3 = document.getElementById("porcentaje3")
+let porcentaje2 = document.getElementById("porcentaje2")
+let porcentaje1 = document.getElementById("porcentaje1")
+
+
+
+const valor5 = 100
+const valor4 = 100
+const valor3 = 100
+const valor2 = 10
+const valor1 = 10
+
+    star.addEventListener("mouseover", () => {
+        cargar();
+    })
+
+    star.addEventListener("mouseout", () => {
+
+            cal.style.display = "none"
+            barra_cinco.style.width = "0%"
+            barra_cuatro.style.width = "0%"
+            barra_tres.style.width = "0%"
+            barra_dos.style.width = "0%"
+            barra_uno.style.width = "0%"
+            barra_cinco.style.transition = "none"
+            barra_cuatro.style.transition = "none"
+            barra_tres.style.transition = "none"
+            barra_dos.style.transition = "none"
+            barra_uno.style.transition = "none"
+    })
+
+    function cargar(){
+        cal.style.display = "inline"
+        setTimeout(() => {
+            resultado = parseInt(valor5) + parseInt(valor4) + parseInt(valor3) + parseInt(valor2) + parseInt(valor1)
+
+            let total_cinco = parseInt(valor5) * 100 / resultado
+                barra_cinco.style.width = `${total_cinco}%`
+                barra_cinco.style.transition = ".5s all linear"
+                porcentaje5.innerHTML = total_cinco.toFixed(2) + "%"
+
+            let total_cuatro = parseInt(valor4) * 100 / resultado
+                barra_cuatro.style.width = `${total_cuatro}%`
+                barra_cuatro.style.transition = ".5s all linear"
+                porcentaje4.innerHTML = total_cuatro.toFixed(2) + "%"
+
+            let total_tres = parseInt(valor3) * 100 / resultado
+                barra_tres.style.width = `${total_tres}%`
+                barra_tres.style.transition = ".5s all linear"
+                porcentaje3.innerHTML = total_tres.toFixed(2) + "%"
+
+            let total_dos = parseInt(valor2) * 100 / resultado
+                barra_dos.style.width = `${total_dos}%`
+                barra_dos.style.transition = ".5s all linear"
+                porcentaje2.innerHTML = total_dos.toFixed(2) + "%"
+
+            let total_uno = parseInt(valor1) * 100 / resultado
+                barra_uno.style.width = `${total_uno}%`
+                barra_uno.style.transition = ".5s all linear"
+                porcentaje1.innerHTML = total_uno.toFixed(2) + "%"
+        }, 1)
+        
+    }
+
+
 let start1 = document.getElementById("start1")
 let start2 = document.getElementById("start2")
 let start3 = document.getElementById("start3")
@@ -215,3 +293,4 @@ function volverResults(){
     principal.classList.add("infoProductoTop2")
     resultados.classList.remove("mainContent2")
 }
+
