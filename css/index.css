@@ -70,8 +70,8 @@ body{
     }
 
     100% {
-        -webkit-transform: translateX(calc(-247px * 25));
-        transform: translateX(calc(-247px * 25));
+        -webkit-transform: translateX(calc(-247px * 26));
+        transform: translateX(calc(-247px * 26));
     }
 }
 

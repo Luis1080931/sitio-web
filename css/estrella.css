@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cal-box {
+    position: relative;
+    /* display: none; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cal {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cal > div {
+    background-color: orange;
+    height: 20px;
+    transition: 1s all linear;
+    width: 0;
+    border-radius: 5px;
+}
+.estrellasCalificacion {
+    cursor: pointer;
+}
